@@ -1,0 +1,9 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button *ngFor="let item of tabs" [tab]="item.tab">
+      <!-- <ion-icon name="calendar"></ion-icon> -->
+      <ion-label>{{item.label}}</ion-label>
+      <!-- <ion-badge>6</ion-badge> -->
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
