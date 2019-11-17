@@ -1,0 +1,38 @@
+.color1 {
+  --background: linear-gradient(72.46deg,#5c75ba 0,#adbffb 100.51%);
+  --color: #ffffff;
+}
+
+.color2 {
+  --background: linear-gradient(72.46deg,#d33939 0,#d339396b 100.51%);
+  --color: #ffffff;
+}
+
+.color3 {
+  --background: linear-gradient(72.46deg,#633ce0 0,#633ce075 100.51%);
+  --color: #ffffff;
+}
+
+.color4 {
+  --background: linear-gradient(72.46deg,#055825 0,#08803794 100.51%);
+  --color: #ffffff;
+}
+
+.wrapper {
+
+  display: flex;
+  align-items: center;
+  i {
+    font-size: 35px;
+  }
+  .stats {
+    margin-left: 20px;
+    .title {
+      font-size: 16px;
+    }
+    .number {
+      font-size: 23px;
+      font-weight: 600;
+    }
+  }
+}

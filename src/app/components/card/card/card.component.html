@@ -1,5 +1,11 @@
-<ion-card>
+<ion-card *ngFor="let item of cards" [class]="item.color">
   <ion-card-content>
-    Total Sale: $ 20,000
+    <div class="wrapper">
+      <i [class]="item.icon"></i>
+      <div class="stats">
+        <div class="title">{{item.title}}</div>
+        <div class="number">{{item.number}}</div>
+      </div>
+    </div>
   </ion-card-content>
 </ion-card>

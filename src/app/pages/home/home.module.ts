@@ -6,18 +6,14 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 import { TabsModule } from '../../components/tabs/tabs.module';
+import { HomePageRoutingModule } from './home-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild([
-      {
-        path: '',
-        component: HomePage
-      }
-    ]),
+    HomePageRoutingModule,
     TabsModule
   ],
   declarations: [HomePage]
