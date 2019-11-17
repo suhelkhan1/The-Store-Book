@@ -9,9 +9,9 @@ import { ITab } from 'src/app/models';
 export class HomePage {
 
   tabs: ITab[] = [
-    { tab: 'all', label: 'All'},
-    { tab: 'today', label: 'Today'},
-    { tab: 'Month', label: 'Month'},
+    { tab: 'dashboard', label: 'Dashboard', icon: 'aperture'},
+    { tab: 'credits', label: 'Credits', icon: 'card'},
+    { tab: 'add-sale', label: 'Add Sale', icon: 'book'},
   ];
   constructor() {}
 
