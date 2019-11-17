@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ITab } from '../models';
+import { ITab } from 'src/app/models';
 
 @Component({
   selector: 'app-home',

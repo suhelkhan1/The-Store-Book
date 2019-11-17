@@ -1,1 +1,1 @@
-export {} from './tabs/tabs.module';
+export { TabsModule } from './tabs/tabs.module';

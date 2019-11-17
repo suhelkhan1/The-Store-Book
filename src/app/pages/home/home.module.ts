@@ -5,7 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
-import { TabsModule } from '../components/tabs/tabs.module';
+import { TabsModule } from '../../components/tabs/tabs.module';
 
 @NgModule({
   imports: [
