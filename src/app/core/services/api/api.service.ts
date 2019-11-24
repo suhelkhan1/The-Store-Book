@@ -18,18 +18,32 @@ export class ApiService {
   ) { }
 
   get(url) {
-    return this.http.get(url, this.httpOptions);
+    const apiUrl = environment.APP.BASE_URL + url;
+    return this.http.get(apiUrl, this.httpOptions);
+  }
+
+  getAll(url) {
+    const apiUrl = environment.APP.BASE_URL + url;
+    return this.http.get(apiUrl, this.httpOptions);
   }
 
   post(url, data) {
-    return this.http.post(url, JSON.stringify(data), this.httpOptions);
+    const apiUrl = environment.APP.BASE_URL + url;
+    return this.http.post(apiUrl, JSON.stringify(data), this.httpOptions);
   }
 
   put(url, data) {
-    return this.http.put(url, JSON.stringify(data), this.httpOptions);
+    const apiUrl = environment.APP.BASE_URL + url;
+    return this.http.put(apiUrl, JSON.stringify(data), this.httpOptions);
+  }
+
+  patch(url, data) {
+    const apiUrl = environment.APP.BASE_URL + url;
+    return this.http.put(apiUrl, JSON.stringify(data), this.httpOptions);
   }
 
   delete(url) {
-    return this.http.delete(url, this.httpOptions);
+    const apiUrl = environment.APP.BASE_URL + url;
+    return this.http.delete(apiUrl, this.httpOptions);
   }
 }

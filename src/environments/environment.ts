@@ -6,7 +6,7 @@ import { API_URLS } from './api-urls';
 export const environment = {
   production: false,
   APP: {
-    BASE_URL: 'localhost:3000/',
+    BASE_URL: 'http://localhost:3000/',
     API_URLS
   }
 };

@@ -8,6 +8,8 @@ import { AddSalePageRoutingModule } from './add-sale-routing.module';
 
 import { AddSalePage } from './add-sale.page';
 import { InputModule } from 'src/app/components/input/input.module';
+import { CoreModule } from 'src/app/core/core.module';
+import { SelectModule } from 'src/app/components/select/select.module';
 
 @NgModule({
   imports: [
@@ -15,7 +17,9 @@ import { InputModule } from 'src/app/components/input/input.module';
     FormsModule,
     IonicModule,
     AddSalePageRoutingModule,
-    InputModule
+    CoreModule,
+    InputModule,
+    SelectModule
   ],
   declarations: [AddSalePage]
 })
