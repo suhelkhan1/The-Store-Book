@@ -1,5 +1,6 @@
 export const API_URLS = {
 
   EXPENSES: 'expenses',
-  DISTRIBUTOR: 'distributor'
+  DISTRIBUTOR: 'distributor',
+  CUSTOMER: 'customer'
 };

@@ -28,6 +28,7 @@ export class AddSalePage implements OnInit {
   ngOnInit() {
     this.getAllExpenses();
     this.getAllDistributor();
+    this.getAllCustomers();
   }
 
   formInit() {
@@ -45,6 +46,11 @@ export class AddSalePage implements OnInit {
   getAllDistributor() {
     this.apiService.getAll(environment.APP.API_URLS.DISTRIBUTOR).subscribe((res: any) => {
       this.distributors = res.data;
+    });
+  }
+  getAllCustomers() {
+    this.apiService.getAll(environment.APP.API_URLS.CUSTOMER).subscribe((res: any) => {
+      this.customers = res.data;
     });
   }
 }
