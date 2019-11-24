@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ApiService } from 'src/app/core/services/api/api.service';
 import { environment } from 'src/environments/environment';
-import { IExpense } from 'src/app/models';
+import { IExpense, IDistributor } from 'src/app/models';
 
 @Component({
   selector: 'app-add-sale',
@@ -18,6 +18,8 @@ export class AddSalePage implements OnInit {
   cutomerBorrows: FormControl;
 
   expenses: IExpense[] = [];
+  distributors: IDistributor[] = [];
+  customers: IDistributor[] = [];
 
   constructor(
     private apiService: ApiService
@@ -25,6 +27,7 @@ export class AddSalePage implements OnInit {
 
   ngOnInit() {
     this.getAllExpenses();
+    this.getAllDistributor();
   }
 
   formInit() {
@@ -37,6 +40,11 @@ export class AddSalePage implements OnInit {
   getAllExpenses() {
     this.apiService.getAll(environment.APP.API_URLS.EXPENSES).subscribe((res: any) => {
       this.expenses = res.data;
+    });
+  }
+  getAllDistributor() {
+    this.apiService.getAll(environment.APP.API_URLS.DISTRIBUTOR).subscribe((res: any) => {
+      this.distributors = res.data;
     });
   }
 }

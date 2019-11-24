@@ -8,8 +8,12 @@
   <div>
     <div class="title">Add Today's Sale</div>
     <app-input postion="floating" label="Sale"></app-input>
-    <app-input postion="floating" label="Credits"></app-input>
-    <app-input postion="floating" label="Customer's Borrows"></app-input>
+    <app-select label="Distributors" placeHolder="Select distributor" [options]="distributors"></app-select>
+    <app-input postion="floating" label="Credits Amount"></app-input>
+
+    <app-select label="Customers" placeHolder="Select customer" [options]="customers"></app-select>
+    <app-input postion="floating" label="Customer's Borrows Amount"></app-input>
+
     <app-select label="Expenses" placeHolder="Select expenses" [options]="expenses"></app-select>
     <app-input postion="floating" label="Expenses Amount"></app-input>
   </div>
