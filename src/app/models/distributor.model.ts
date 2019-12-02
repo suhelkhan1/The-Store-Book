@@ -1,5 +1,5 @@
 export interface IDistributor {
-  id: string;
+  _id: string;
   name: string;
   phone: number;
   description: string;

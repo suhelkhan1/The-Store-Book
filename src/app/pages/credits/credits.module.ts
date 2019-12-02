@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { CreditsPageRoutingModule } from './credits-routing.module';
 
 import { CreditsPage } from './credits.page';
+import { CoreModule } from 'src/app/core/core.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CreditsPageRoutingModule
+    CreditsPageRoutingModule,
+    CoreModule
   ],
   declarations: [CreditsPage]
 })

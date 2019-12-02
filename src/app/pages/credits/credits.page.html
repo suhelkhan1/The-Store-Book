@@ -5,5 +5,12 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-list>
+    <ion-item *ngFor="let item of credits?.data">
+      <ion-label>
+        <h1>{{item?.amount?.amount}}</h1>
+        <p>{{item?.distributor?.name}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
